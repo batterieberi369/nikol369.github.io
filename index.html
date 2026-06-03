@@ -93,6 +93,43 @@
                     <tr>
                         <td>3 часа</td>
                         <td>250 ₽</td>
+<section>
+    <h2>Арендуйте пауэрбанк прямо сейчас!</h2>
+    <p>Выберите период аренды и нажмите кнопку «Оплатить».</p>
+
+    <div class="payment-options">
+        <div class="option">
+            <h3>1 час</h3>
+            <p>100 ₽</p>
+            <button class="pay-btn" onclick="initPayment('1 час', 100)">Оплатить</button>
+        </div>
+        <div class="option">
+            <h3>3 часа</h3>
+            <p>250 ₽</p>
+            <button class="pay-btn" onclick="initPayment('3 часа', 250)">Оплатить</button>
+        </div>
+        <div class="option">
+            <h3>6 часов</h3>
+            <p>450 ₽</p>
+            <button class="pay-btn" onclick="initPayment('6 часов', 450)">Оплатить</button>
+        </div>
+        <div class="option">
+            <h3>24 часа</h3>
+            <p>800 ₽</p>
+            <button class="pay-btn" onclick="initPayment('24 часа', 800)">Оплатить</button>
+        </div>
+    </div>
+
+    <script src="https://yookassa.ru/payment-button/v1/button.js"></script>
+    <script>
+        function initPayment(period, amount) {
+            // Здесь будет код инициализации платежа
+            // Для тестового режима можно использовать заглушку:
+            alert('Выбран период: ' + period + ', сумма: ' + amount + ' ₽. В реальном режиме здесь откроется форма ЮKassa.');
+        }
+    </script>
+</section>
+
                     </tr>
             <tr>
                 <td>6 часов</td>
